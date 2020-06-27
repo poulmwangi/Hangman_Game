@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hangman</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel = "stylesheet"type = "text/css" href = "hangman.css"/>
+</head>
+<body>
+<div class="container-fluid">
+<h1 class="text-center">Hangman Game</h1>
+<div class="float-right">Wrong Guesses: <span id="mistakes">0</span> of <span id="wrong"></span></div>
+<div class="text-center">
+<p>Guess The Word</p>
+
+
+<div class="form-group">
+<label for=""><button class="btn btn-success">Hint</button>
+ <p id="hint"></p> 
+</label>
+</div>
+<p class="WordSpotlight">The word to be guessed Goes here</p>
+
+<div id="keyboard">
+</div>
+<button class="btn btn-success" onclick="reset()">Reset</button>
+</div>
+
+<footer class="text-center ">Coded by Paul Mwangi <em>with lots of junks from  the Web</em></footer>
+</div>
+
+<script src="functions.js"></script>
+<script src="./request.js"></script>
+<script src="hangman.js"></script>
+</body>
+</html>
